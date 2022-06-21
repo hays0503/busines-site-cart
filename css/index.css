@@ -1,5 +1,5 @@
 html{
-    background-image: url('./bg.jpg');
+    background-image: url('../img/bg.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -58,7 +58,7 @@ span,h1,h3,h4,p{
     top: 0px;
     right: 0px;
     z-index: auto;
-    background-image: url(./3.svg); 
+    background-image: url(../img/bird.svg); 
     width: 100px;
     height: 100px;
     animation: flyBird 3s infinite;
