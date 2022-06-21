@@ -1,0 +1,116 @@
+html{
+    background-image: url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: auto;
+    background-color: rgba(44, 44, 44, 0.4);
+    border: 4px double rgb(228, 228, 228);
+    padding: 10px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: rgba(110, 45, 102, 0.45);
+    color: white;
+    text-align: center;
+   }
+
+
+span,h1,h3,h4,p{
+    color: azure;
+}
+
+.hoku{
+    background-color: rgba(110, 45, 102, 0.45);
+    display: inline-block;
+    border: 3px solid purple;
+    border-style: groove;
+    border-radius: 2px;
+    
+}
+
+.infoBlock{
+    background-color: rgba(110, 45, 102, 0.45);
+    display: inline-block;
+    border: 3px solid purple;
+    border-style: groove;
+    border-radius: 2px;
+    color: azure;    
+}
+
+.animatedBird {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: auto;
+    background-image: url(./3.svg); 
+    width: 100px;
+    height: 100px;
+    animation: flyBird 3s infinite;
+    animation-timing-function: ease-in-out;
+
+ }
+.flyBird {
+    width: 200px; 
+    transform: scale(1, 0);
+ }
+
+ @keyframes flyBird {
+    0% {
+        transform: translate(5px);
+    }
+    25% {
+        transform: skewX(2deg);
+    }
+    50% {
+        transform: skewX(5deg);
+        transform: translate(5px);
+        transform: skewX(-2deg);
+    }
+    75% {
+        transform: skewX(-5deg);
+        transform: translate(-4px,-2px);
+        transform: skewX(2deg);
+    }
+    100% {
+        transform: skewX(5deg);
+        transform: translate(5px);
+        
+    }
+  }
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+    z-index: 0;
+    position: relative;
+    width: 95%;
+    height: 95%;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+#particles-js canvas{
+    z-index: 0;
+}
+
+.wrapper {
+    position: relative;
+  }
